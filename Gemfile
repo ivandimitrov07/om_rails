@@ -6,7 +6,11 @@ gem 'rails_12factor', group: :production
 
 ruby '1.9.3'
 
+#better webserver
 gem 'thin'
+
+#bootstrap gems
+gem 'bootstrap-sass', '~> 2.3.2.1'
 
 # Use sqlite3 as the database for Active Record
 group :production do
