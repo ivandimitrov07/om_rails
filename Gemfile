@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
 gem 'rails_12factor', group: :production
+gem 'devise'
+gem "simple_form", "~> 3.0.0.rc"
 
 ruby '1.9.3'
 

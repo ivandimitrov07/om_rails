@@ -1,10 +1,14 @@
-<div class="hero-unit">
-	<h1>Welcome to Seminar Portal</h1>
-	<p>
-		You have found the homepage for the
-		<%= link_to "Seminars Worlwide.", "http://webitcongress.com", target: '_blank' %>
-	</p>
-	<p>
-		<%= link_to "Sign Up Now!", "#", class: 'btn btn-primary btn-large' %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>Logged in!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Seminar Portal</h1>
+		<p>
+			You've found the fan page for the
+			<%= link_to "Seminars Worlwide.", "http://webitcongress.com", target: '_blank' %>
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: 'btn btn-primary btn-large' %>
+		</p>
+	</div>
+<% end %>
